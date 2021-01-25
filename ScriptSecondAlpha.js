@@ -1,3 +1,18 @@
+var secretNum;
+var clicks = 0;
 function changeName() {
-  document.getElementById("header").innerHTML = "this is amazing"
+  clicks += 1;
+  if(clicks == 1){
+    secretNum = Math.random() * 100;
+    secretNum = Math.ceil(secretNum);
+    console.log(secretNum);
+    document.getElementById("theirGuess").style.visibility = "visible";
+    document.getElementById("btnPress").innerHTML = "Guess";
+  }else{
+    document.getElementById("numOfGuesses").innerHTML = "Guess: " + clicks;
+    var theirGuess = document.getElementById("theirGuess").value;
+    if(theirGuess > secretNum){
+      document.getElementById("instructions").innerHTML = "Too High";
+    }
+  }
 }//endfunction
