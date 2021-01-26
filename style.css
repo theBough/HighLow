@@ -17,3 +17,11 @@ h2{
 #theirGuess{
   visibility: hidden;
 }
+h3{
+  text-align: center;
+}
+button{
+  border-radius: 12px;
+  background-color: rgba(0, 140, 255, 0.877);
+  color: white;
+}
