@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Boughen</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <h1 id= "title">Boughen's Amazing Website</h1>
-    <h2 id="instruction">I am going to think of a random number between 1-100</br>I will give you six guesses to try and figure it out.</br> After each guess I will tell you if your guess is too high or too low</h2>
-    <div class = "center">
-      <input type = "text" id = "theirGuess"></br></input>
-      <button id = "btnPress" class="button" onclick="gameStart()">Press to Start</button>
-    </div>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Boughen</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1 id="title">Boughen's Amazing High Low Game</h1>
+	<h2 id="instruction">I am going to think of a random number between 1-100</br>I will give you six guesses to try and figure
+		it out.</br> After each guess I will tell you if your guess is too high or too low</h2>
+    <h2 id="guesses"> Guesses: 0</h2>
+    <h2 id = "feedback"></h2>
+	<h3>
+		<input type = "text" id = "theirGuess"></br></input>
+    <button id = "btnPress" class="button" onclick="gameStart()">Press to Start</button>
+    </h3>
     <script src="script.js"></script>
   </body>
 </html>
