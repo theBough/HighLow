@@ -10,6 +10,7 @@ function gameStart(){
     document.getElementById("btnPress").innerHTML = "Guess";
     document.getElementById("feedback").innerHTML = "";
     document.getElementById("guesses").innerHTML = "Guesses: " + numOfGuesses;
+    document.getElementById("animatedGif").style.visibility = "hidden";
     console.log(secretNum);
   }else{
     numOfGuesses += 1;
@@ -25,6 +26,7 @@ function gameStart(){
       document.getElementById("theirGuess").style.visibility = "hidden";
       clicks = 0;
       numOfGuesses = 0;
+      document.getElementById("animatedGif").style.visibility = "visible";
     }
   }//end else
 }// end gameStart
