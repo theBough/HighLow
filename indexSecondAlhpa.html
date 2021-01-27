@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Boughen</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <h1 id = "header">Corbin's High Low Game</h1>
-    <h4 id = "instructions">I am going to think of a number between 1-100</br>You have 6 guesses to try and figure it out.</br>After each guess I will say Too high or Too low.</br> Goodluck!</br></h4>
-    <p id="numOfGuesses">Guesses: 0</p>
-    <input type ="text" id = "theirGuess">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Boughen</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1 id="header">Corbin's High Low Game</h1>
+	<h4 id="instructions">I am going to think of a number between 1-100</br>You have 6 guesses to try and figure it out.</br>After
+		each guess I will say Too high or Too low.</br> Goodluck!</br></h4>
+	<p id="numOfGuesses">Guesses: 0</p>
+	<h3>
+		<input type ="text" id = "theirGuess">
     <button onclick= "changeName()" id = "btnPress">Press this</button>
+    </h3>
     <script src="script.js"></script>
   </body>
 </html>
