@@ -1,0 +1,27 @@
+body{
+  background-color: blue;
+}
+h1{
+  color: white;
+  text-align: center;
+}
+button{
+  border-radius: 50%;
+  padding: 14px 40px;
+  background-color: rgb(66, 156, 230);
+  color: whitesmoke;
+}
+h4{
+  color: rgb(233, 224, 224);
+  text-align: center;
+}
+input{
+  visibility: hidden;
+}
+p{
+  color: white;
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
