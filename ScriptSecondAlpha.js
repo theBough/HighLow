@@ -13,6 +13,10 @@ function changeName() {
     var theirGuess = document.getElementById("theirGuess").value;
     if(theirGuess > secretNum){
       document.getElementById("instructions").innerHTML = "Too High";
+    }else if( theirGuess< secretNum){
+      document.getElementById("instructions").innerHTML = "Too Low";
+    }else{
+      document.getElementById("instructions").innerHTML = "You Got it!!";
     }
   }
 }//endfunction
