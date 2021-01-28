@@ -18,8 +18,10 @@ function gameStart(){
     theirGuess = document.getElementById("theirGuess").value;
     if(theirGuess > secretNum){
       document.getElementById("feedback").innerHTML = "Too High"
+      checkFail()
     }else if(theirGuess< secretNum){
         document.getElementById("feedback").innerHTML = "Too Low"
+        checkFail()
     }else{
       document.getElementById("feedback").innerHTML = "Got it! </br> Play again?"
       document.getElementById("btnPress").innerHTML = "Play Again?";
@@ -30,3 +32,14 @@ function gameStart(){
     }
   }//end else
 }// end gameStart
+function checkFail(){
+  if(clicks == 7){
+      document.getElementById("feedback").innerHTML = "Sorry Champ you Lost! </br> Play Again?";
+      document.getElementById("animatedGif").style.visibility = "visible";
+      document.getElementById("animatedGif").src = "fail.jpg"
+      document.getElementById("btnPress").innerHTML = "Play Again?";
+      document.getElementById("theirGuess").style.visibility = "hidden";
+      clicks = 0;
+      numOfGuesses = 0;
+  }//end if
+}//end function checkFail
