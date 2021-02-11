@@ -1,1 +1,17 @@
+/*this is the div that we are placing our elements in */
+.backgroundStuff{
+  position: relative;
+  overflow: hidden;
+  padding:30px;
+}
 
+/*This is the img element in the div that we wanted to
+adjust the opacity */
+.backgroundStuff #background{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: auto;
+  opacity: 0.2;
+}
